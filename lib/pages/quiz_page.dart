@@ -60,8 +60,6 @@ class QuizPageState extends State<QuizPage>{
           (){
             if(quiz.length == questionNumber){
               Navigator.of(context).pushAndRemoveUntil(new MaterialPageRoute(builder: (BuildContext context) => new ScorePage(quiz.score, quiz.length)), (Route route) => route == null);
-              
-              push(new MaterialPageRoute(builder: (BuildContext context) => new ScorePage(quiz.score, quiz.length)));
               return;
             }
             currentQuestion = quiz.nextQuestion;
