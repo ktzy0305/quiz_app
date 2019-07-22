@@ -4,7 +4,6 @@ import '../models/quiz.dart';
 import '../components/answer_button.dart';
 import '../components/question_text.dart';
 import '../components/validity_overlay.dart';
-import './landing_page.dart';
 import './score_page.dart';
 
 class QuizPage extends StatefulWidget{
