@@ -14,7 +14,7 @@ class AnswerButton extends StatelessWidget{
       child: new Material(
         color: _answer == true ? Colors.greenAccent : Colors.redAccent,
         child: new InkWell(
-          onTap: ()=>_onTap,
+          onTap: () => _onTap(),
           child: new Center(
             child: new Container(
               child: new Text(_answer == true ? "True" : "False", style: TextStyle(color: Colors.white, fontSize: 70.0, fontStyle: FontStyle.italic)),
