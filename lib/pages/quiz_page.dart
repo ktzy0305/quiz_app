@@ -35,7 +35,6 @@ class QuizPageState extends State<QuizPage>{
   }
 
   void checkAnswerValidity(bool answer){
-    print("I pressed "+ answer.toString());
     isCorrect = (currentQuestion.answer == answer);
     quiz.answer(isCorrect);
     this.setState(() {
